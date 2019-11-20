@@ -17,5 +17,5 @@ class intToRoman:
 				units[decimalNumber % 10])
 
 
-
-print(intToRoman().integerToRoman(400))
+number = int(input())
+print(intToRoman().integerToRoman(number))
