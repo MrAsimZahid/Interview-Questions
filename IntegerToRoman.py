@@ -11,10 +11,10 @@ class intToRoman:
 
 		thousands = ['', 'M', 'MM', 'MMM']
 
-		return self.str(thousands[decimalNumber / 1000] +
-				hundreds[(decimalNumber % 1000) / 100] +
-				tens[(decimalNumber % 100) / 10] +
-				units[decimalNumber % 10]
+		return (thousands[decimalNumber // 1000] +
+				hundreds[(decimalNumber % 1000) // 100] +
+				tens[(decimalNumber % 100) // 10] +
+				units[decimalNumber % 10])
 
 
 
